@@ -1,0 +1,281 @@
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1175px)
+{
+    *
+    {
+        font-family: Helectivia, Arial, sans-serif;
+        text-align: center;
+        font-size: 24px;
+    }
+    #help
+    {
+        color: blueviolet;
+    }
+    #container
+    {
+        border: 1px solid gray;
+        padding: 100px;
+        margin-top: 25px;
+    }
+
+    #placeholder
+    {
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    margin: 50px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size:24px;
+    float: left;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 100px;
+    }
+
+    #placeholder2
+    {
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    margin: 50px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size:24px;
+    float: right;
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 100px;
+    }
+
+    #results
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    cursor: pointer;
+    float: left;
+    margin-top: 275px;
+    margin-left: -25px;
+    }
+
+    #end
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    cursor: pointer;
+    float: center;
+    margin-top: 275px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+    }
+
+    #new
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    cursor: pointer;
+    float: right;
+    margin-top: 275px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+    margin-right: -25px;
+    }
+}
+
+/* Less than laptops*/
+@media only screen  and (max-width : 1175px) and (min-width : 930px)
+{
+    *
+    {
+        font-family: Helectivia, Arial, sans-serif;
+        text-align: center;
+        font-size: 24px;
+    }
+    #container
+    {
+        border: 1px solid gray;
+        padding: 100px;
+        margin-top: 25px;
+    }
+    #help
+    {
+        color: blueviolet;
+    }
+    #placeholder
+    {
+    height: 100px;
+    width: 75px;
+    padding: 50px;
+    margin: 25px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size:24px;
+    float: left;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    }
+    #placeholder2
+    {
+    height: 100px;
+    width: 75px;
+    padding: 50px;
+    margin: 25px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size:24px;
+    float: right;
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 50px;
+    }
+    #new
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 150px;
+    float: right;
+    cursor: pointer;
+    margin-top: 275px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+    }
+    #end
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 150px;
+    float: center;
+    cursor: pointer;
+    margin-top: 275px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+    #results
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 150px;
+    float: left;
+    cursor: pointer;
+    margin-top: 275px;
+    }
+}
+
+@media only screen  and (max-width: 930px)
+{
+    *
+    {
+        font-family: Helectivia, Arial, sans-serif;
+        text-align: center;
+        font-size: 24px;
+    }
+    #container
+    {
+        border: 1px solid gray;
+        padding: 100px;
+        margin-top: 25px;
+    }
+    #help
+    {
+        color: blueviolet;
+    }
+    #placeholder
+    {
+    height: 100px;
+    width: 75px;
+    padding: 50px;
+    margin: 25px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size:24px;
+    float: left;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    }
+    #placeholder2
+    {
+    height: 100px;
+    width: 75px;
+    padding: 50px;
+    margin: 25px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size:24px;
+    float: right;
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 50px;
+    }
+    #new
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 150px;
+    float: right;
+    cursor: pointer;
+    margin-top: 400px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+    }
+    #end
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 150px;
+    float: center;
+    cursor: pointer;
+    margin-top: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+    #results
+    {
+    background-color: rgb(82, 186, 179);
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 150px;
+    float: left;
+    cursor: pointer;
+    margin-top: 400px;
+    }
+}
