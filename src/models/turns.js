@@ -7,6 +7,6 @@ var turnSchema = new mongoose.Schema({
   timestamp: Boolean //Need to change these two things but I'm not sure what. Maybe ask Joey
 });
 
-var model = mongoose.model('Turns', turnSchema);
+var model = mongoose.model('turns', turnSchema);
 
 module.exports = model;

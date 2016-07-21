@@ -6,11 +6,10 @@
     <div id="help">
         <h1> Click In The Box To Start The Timer! Player One Goes First!</h1>
     </div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script> -->
 </head>
 <body ng-app="Chess_Timer_App">
   <div ng-controller = "mainCtrl">
-    <div id="container" ng-click = "GetData">
+    <div id="container" ng-click = "GetData()">
     </div>
     <p id="placeholder">
     </p>
@@ -22,6 +21,8 @@
   </div>
     <script language="javascript" type="text/javascript"></script>
     <script src="main.js"></script>
-    <script src="express.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="controllers/main.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
