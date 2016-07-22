@@ -8,7 +8,7 @@ var router = express.Router();
 
 router.post('/turns', function(req, res){
   var turn = req.body;
-  console.log("This is working");
+  console.log(turn);
   Turn.create(turn, function(err, turn){
     if(err){
       return res.status(500).json({err: err.message});
@@ -16,7 +16,7 @@ router.post('/turns', function(req, res){
     res.json({'turn': turn, message: 'Turn counted'});
   })
 });
-// router.get('/turns', function(req, res){
-//   console.log("This is working!");
-// });
+router.get('/turns', function(req, res){
+  res.send("success");
+});
 module.exports = router;

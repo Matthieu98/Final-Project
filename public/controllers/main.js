@@ -5,6 +5,6 @@ angular.module('mainCtrl', [])
   {
     $scope.GetData = function()
     {
-      console.log($http.post('/api/turns', {turn: 1}));
+      //console.log($http.post('/api/turns', {turn: 1}));
     };
   });

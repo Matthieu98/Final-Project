@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 
 var turnSchema = new mongoose.Schema({
   name: String,
-  timestamp: Boolean //Need to change these two things but I'm not sure what. Maybe ask Joey
+  timestamp: Number
 });
 
 var model = mongoose.model('turns', turnSchema);
