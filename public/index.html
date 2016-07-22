@@ -6,10 +6,10 @@
     <div id="help">
         <h1> Click In The Box To Start The Timer! Player One Goes First!</h1>
     </div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script> -->
 </head>
 <body ng-app="Chess_Timer_App">
-    <div id="container">
+  <div ng-controller = "mainCtrl">
+    <div id="container" ng-click = "GetData()">
     </div>
     <p id="placeholder">
     </p>
@@ -18,8 +18,12 @@
     <button id="end">Game Over</button>
     <button id="results">Game Results</button>
     <input type="button" value="New Game" onClick="window.location.reload()" id="new">
+  </div>
     <script language="javascript" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="controllers/main.js"></script>
     <script src="main.js"></script>
-    <script src="express.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -28,7 +28,8 @@ function StartGame(event)
         }, 1000);
         pOneTurn = true;
         pTwoTurn = false;
-        pOneTurnTimes = [{"Turn Time: ": pOneTime}];
+        pOneTurnTimes = [{"name": "Player 1", "timestamp": pOneTime}];
+        SaveData(pOneTurnTimes);
     }
     else{
         if(pOneTurn == true)
@@ -41,7 +42,8 @@ function StartGame(event)
             }, 1000);
             pOneTurn = false;
             pTwoTurn = true;
-            pTwoTurnTimes = [{"Turn Time: ": pTwoTime}];
+            pTwoTurnTimes = [{"name": "Player 2", "timestamp": pTwoTime}];
+            SaveData(pTwoTurnTimes);
         } else{
             clearInterval(playerTwoInterval);
             playerOneInterval = setInterval(function ()
@@ -51,9 +53,24 @@ function StartGame(event)
             }, 1000);
             pOneTurn = true;
             pTwoTurn = false;
-            pOneTurnTimes = [{"Turn Time: ": pOneTime}];
+            pOneTurnTimes = [{"name": "Player 1", "timestamp": pOneTime}];
+            SaveData(pOneTurnTimes);
         }
     }
+}
+
+function SaveData(pTurn)
+{
+  console.log(pTurn);
+  $.ajax({
+    type: "POST",
+    url: "/api/turns",
+    data: JSON.stringify(pTurn),
+    contentType: "application/json",
+    success: function(){
+      console.log("Success");
+    }
+  });
 }
 
 function StopGame()
