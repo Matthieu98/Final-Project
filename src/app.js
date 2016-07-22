@@ -7,8 +7,6 @@ var router = require('./api');
 
 var app = express();
 
-//var seed = require('./seed');
-
 app.use('/', express.static('public'));
 app.use(parser.json());
 

@@ -9,6 +9,4 @@ var turnSchema = new mongoose.Schema({
 
 var model = mongoose.model('turns', turnSchema);
 
-//mongoose.connect('mongodb://localhost/myapp');
-
 module.exports = model;

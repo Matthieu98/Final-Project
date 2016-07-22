@@ -8,7 +8,6 @@ Turn.remove({}, function(err){
     console.log(err);
   }
 });
-// var turns = require('../../mock/turns.json');
 
 var router = express.Router();
 
@@ -23,7 +22,6 @@ router.post('/turns', function(req, res){
   })
 });
 router.get('/turns', function(req, res){
-  //turn find funciton here
   Turn.find({}, function(err, turns) {
     if (err) {
       return res.status(500).json({err: err.message});
