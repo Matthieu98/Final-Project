@@ -13,6 +13,7 @@ var GameHasBeenStarted = false;
 var pOneTurnTimes = [];
 var pTwoTurnTimes = [];
 
+
 pOne.innerHTML = "Player One Time Time: " + pOneTime;
 pTwo.innerHTML = "Player Two Time Time: " + pTwoTime;
 
@@ -59,6 +60,21 @@ function StartGame(event)
     }
 }
 
+function StopGame()
+{
+    clearInterval(playerOneInterval);
+    clearInterval(playerTwoInterval);
+}
+
+function GetResults()
+{
+  window.location.href = "http://localhost:3000/api/turns";
+  pOneTurnTimes = [{"name": "Player 1", "timestamp": pOneTime}];
+  SaveData(pOneTurnTimes);
+  pTwoTurnTimes = [{"name": "Player 2", "timestamp": pTwoTime}];
+  SaveData(pTwoTurnTimes);
+}
+
 function SaveData(pTurn)
 {
   console.log(pTurn);
@@ -71,17 +87,6 @@ function SaveData(pTurn)
       console.log("Success");
     }
   });
-}
-
-function StopGame()
-{
-    clearInterval(playerOneInterval);
-    clearInterval(playerTwoInterval);
-}
-
-function GetResults()
-{
-  window.location.href = "http://localhost:3000/api/turns";
 }
 
 container.addEventListener("click", StartGame, false);

@@ -2,6 +2,12 @@
 
 var express = require('express');
 var Turn = require('../models/turns.js')
+
+Turn.remove({}, function(err){
+  if(err){
+    console.log(err);
+  }
+});
 // var turns = require('../../mock/turns.json');
 
 var router = express.Router();
@@ -17,6 +23,12 @@ router.post('/turns', function(req, res){
   })
 });
 router.get('/turns', function(req, res){
-  res.send("success");
+  //turn find funciton here
+  Turn.find({}, function(err, turns) {
+    if (err) {
+      return res.status(500).json({err: err.message});
+    }
+    res.json({ turns: turns });
+  });
 });
 module.exports = router;
