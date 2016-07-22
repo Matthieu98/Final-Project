@@ -1,5 +1,6 @@
 'use strict';
 
+var database = require('./database');
 var express = require('express');
 var parser = require('body-parser');
 var router = require('./api');
